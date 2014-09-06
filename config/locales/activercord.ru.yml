@@ -1,0 +1,51 @@
+ru:
+  activerecord:
+    errors:
+      format: "%{message}"
+      messages:
+        inclusion: "поле %{attribute} имеет непредусмотренное значение"
+        exclusion: "поле %{attribute} имеет зарезервированное значение"
+        invalid: "поле %{attribute} имеет неверное значение"
+        confirmation: "не совпадает с подтверждением"
+        accepted: "нужно подтвердить"
+        empty: "не может быть пустым"
+        blank: "не может быть пустым"
+        too_long:
+          one:   "поле %{attribute} слишком большой длины (не может быть больше чем %{count} символ)"
+          few:   "поле %{attribute} слишком большой длины (не может быть больше чем %{count} символа)"
+          many:  "поле %{attribute} слишком большой длины (не может быть больше чем %{count} символов)"
+          other: "поле %{attribute} слишком большой длины (не может быть больше чем %{count} символа)"
+        too_short:
+          one:   "поле %{attribute} недостаточной длины (не может быть меньше %{count} символа)"
+          few:   "поле %{attribute} недостаточной длины (не может быть меньше %{count} символов)"
+          many:  "поле %{attribute} недостаточной длины (не может быть меньше %{count} символов)"
+          other: "поле %{attribute} недостаточной длины (не может быть меньше %{count} символа)"
+        wrong_length:
+          one:   "поле %{attribute} неверной длины (может быть длиной ровно %{count} символ)"
+          few:   "поле %{attribute} неверной длины (может быть длиной ровно %{count} символа)"
+          many:  "поле %{attribute} неверной длины (может быть длиной ровно %{count} символов)"
+          other: "поле %{attribute} неверной длины (может быть длиной ровно %{count} символа)"
+        taken: "%{attribute} уже существует"
+        not_a_number: "%{attribute} не является числом"
+        greater_than: "поле %{attribute} может иметь значение большее %{count}"
+        greater_than_or_equal_to: "поле %{attribute} может иметь значение большее или равное %{count}"
+        equal_to: "поле %{attribute} может иметь лишь значение, равное %{count}"
+        less_than: "поле %{attribute} может иметь значение меньшее чем %{count}"
+        less_than_or_equal_to: "поле %{attribute} может иметь значение меньшее или равное %{count}"
+        odd: "поле %{attribute} может иметь лишь четное значение"
+        even: "поле %{attribute} может иметь лишь нечетное значение"
+        record_invalid: "Возникли ошибки: %{errors}"
+        invalid: "неизвестный"
+        invalid_event: "невозможно изменить статус %{state}"
+        invalid_transition: "невозможно %{event}"
+        wrong_file_type: 'поле %{attribute} неверный тип файла'
+
+      full_messages:
+        format: "%{attribute} %{message}"
+
+    models:
+      user: 'Пользователь'
+    attributes:
+      user:
+        name: 'ФИО'
+        email: 'email'

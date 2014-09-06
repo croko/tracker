@@ -1,0 +1,36 @@
+ru:
+  created: "создан"
+  deleted: "удаленные"
+  yes: 'Да'
+  no: 'Нет'
+  'true': 'Да'
+  'false': 'Нет'
+  open: 'открыт'
+  close: 'закрыт'
+
+  unauthorized:
+      manage:
+        all: "Доступ отклонен"
+
+  views:
+    pagination:
+      previous: "назад"
+      next: "вперед"
+
+      truncate: "..."
+      first: "первая"
+      last: "последняя"
+
+  helpers:
+    submit:
+      create: 'Создать'
+      update: 'Сохранить'
+
+  users:
+    messages:
+      updated: 'Данные успешно сохранены'
+
+  notice:
+    robokassa:
+      success: 'Оплата проведена'
+      fail: 'Оплата отклонена'
