@@ -1,0 +1,8 @@
+en:
+  activerecord:
+    models:
+      user: 'User'
+      task:
+        one: 'Task'
+        few: 'Tasks'
+        other: 'Tasks'

@@ -4,5 +4,11 @@ ul.nav.navbar-top-links.navbar-left
 
 ul.nav.navbar-top-links.navbar-right
   li
+    - if I18n.locale.to_s == 'ru'
+      =link_to 'English', english_path
+    -else
+      =link_to 'Русский', russian_path
+ul.nav.navbar-top-links.navbar-right
+  li
     -if user_signed_in?
       =link_to t('devise.sessions.log_out'), destroy_user_session_path, method: :delete
