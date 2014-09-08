@@ -1,0 +1,8 @@
+ru:
+  simple_form:
+    options:
+      task:
+        status:
+          opened: 'открыта'
+          in_progress: 'в процессе'
+          closed: 'закрыта'

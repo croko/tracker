@@ -158,7 +158,7 @@ GEM
       rdoc (~> 4.0)
     shoulda-matchers (2.7.0)
       activesupport (>= 3.0.0)
-    simple_form (3.0.2)
+    simple_form (3.1.0.rc2)
       actionpack (~> 4.0)
       activemodel (~> 4.0)
     slim (2.0.3)
@@ -232,7 +232,7 @@ DEPENDENCIES
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   shoulda-matchers
-  simple_form
+  simple_form (~> 3.1.0.rc1)
   slim-rails
   spring
   therubyracer
