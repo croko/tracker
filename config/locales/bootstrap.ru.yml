@@ -1,0 +1,17 @@
+ru:
+  helpers:
+    actions: "Действия"
+    links:
+      back: "Назад"
+      cancel: "Отменить"
+      confirm: "Вы уверены?"
+      destroy: "Удалить"
+      new: "Создать"
+      show: "Смотреть"
+      edit: "Редактировать"
+      close: "Закрыть"
+    titles:
+      edit: "Редактирование %{model}"
+      save: "Сохранить %{model}"
+      new: "Новый %{model}"
+      delete: "Удалить %{model}"

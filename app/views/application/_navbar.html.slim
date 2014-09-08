@@ -1,0 +1,8 @@
+ul.nav.navbar-top-links.navbar-left
+  li
+    =link_to t(Task.model_name.human(count: 2)), tasks_path
+
+ul.nav.navbar-top-links.navbar-right
+  li
+    -if user_signed_in?
+      =link_to t('devise.sessions.log_out'), destroy_user_session_path, method: :delete

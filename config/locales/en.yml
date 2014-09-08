@@ -20,4 +20,9 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  tasks:
+      messages:
+        created: 'Task was successfully created'
+        updated: 'Task was successfully updated'
+        deleted: 'Task was successfully destroyed'
+

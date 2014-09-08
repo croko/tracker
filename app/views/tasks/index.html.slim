@@ -1,0 +1,14 @@
+- model_class = Task
+.row
+  .col-lg-12
+    .panel.panel-default
+      .panel-heading
+        h4= t '.title', :default => model_class.model_name.human(count: 2).titleize
+      .panel-body
+        .table-responsive#result
+          ==render partial: 'result', locals: {model_class: model_class}
+
+br
+
+= link_to t('.new', :default => t("helpers.links.new")), new_task_path, class: 'btn btn-primary'
+

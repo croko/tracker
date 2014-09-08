@@ -1,0 +1,23 @@
+table.table.table-hover
+  thead
+    tr
+      th= model_class.human_attribute_name(:date)
+      th= model_class.human_attribute_name(:name)
+      th= model_class.human_attribute_name(:user)
+      th= model_class.human_attribute_name(:status)
+      th
+      th
+      th
+
+  tbody.page
+    - @tasks.each do |task|
+      tr
+        td = task.created_at.strftime('%d.%m.%Y %H:%M')
+        td = task.name
+        td = task.user.try(:name)
+        td = t task.status
+        td = link_to t('helpers.links.show'), task_path(task)
+        td = link_to t('helpers.links.edit'), edit_task_path(task)
+        td = link_to t('helpers.links.destroy'), task, data: {:confirm => t('helpers.links.confirm')}, :method => :delete
+
+= paginate @tasks, remote: true, theme: 'twitter-bootstrap-3'

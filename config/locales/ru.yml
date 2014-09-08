@@ -5,8 +5,9 @@ ru:
   no: 'Нет'
   'true': 'Да'
   'false': 'Нет'
-  open: 'открыт'
-  close: 'закрыт'
+  opened: 'открыта'
+  in_progress: 'в процессе'
+  closed: 'закрыта'
 
   unauthorized:
       manage:
@@ -30,7 +31,8 @@ ru:
     messages:
       updated: 'Данные успешно сохранены'
 
-  notice:
-    robokassa:
-      success: 'Оплата проведена'
-      fail: 'Оплата отклонена'
+  tasks:
+    messages:
+      created: 'Задача успешно создана'
+      updated: 'Задача успешно сохранена'
+      deleted: 'Задача успешно удалена'

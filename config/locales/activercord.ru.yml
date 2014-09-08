@@ -45,7 +45,18 @@ ru:
 
     models:
       user: 'Пользователь'
+      task:
+        one: 'Задача'
+        few: 'Задачи'
+        other: 'Задачи'
+
     attributes:
       user:
         name: 'ФИО'
         email: 'email'
+      task:
+        name: 'Наименование'
+        description: 'Описание'
+        date: 'Дата'
+        user: 'Назначена'
+        status: 'Статус'
