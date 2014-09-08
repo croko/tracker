@@ -28,6 +28,7 @@ gem 'slim-rails'
 gem 'devise'
 gem 'kaminari'
 gem 'bootstrap-kaminari-views'
+gem 'simple_form'
 
 group :development do
   gem 'quiet_assets'
@@ -38,11 +39,11 @@ group :development, :test do
   gem 'pry-rails'
   gem 'pry-byebug'
   gem 'letter_opener'
+  gem 'faker'
 end
 
 group :test do
   gem 'rspec-rails'
-  gem 'faker'
   gem 'factory_girl_rails'
   gem 'shoulda-matchers', require: false
 end
