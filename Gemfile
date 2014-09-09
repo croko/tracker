@@ -41,6 +41,7 @@ group :development, :test do
   gem 'pry-byebug'
   gem 'letter_opener'
   gem 'faker'
+  gem 'coveralls', require: false
 end
 
 group :test do
