@@ -16,6 +16,7 @@ development:
 test:
   <<: *default
   database: tracker_test
+  username: postgres
 
 production:
   <<: *default
