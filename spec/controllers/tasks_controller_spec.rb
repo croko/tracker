@@ -36,6 +36,12 @@ RSpec.describe TasksController, :type => :controller do
   # TasksController. Be sure to keep this updated too.
   let(:valid_session) { {} }
 
+  before(:each) do
+    @request.env["devise.mapping"] = Devise.mappings[:user]
+    user = create(:user)
+    sign_in user
+  end
+
   describe "GET index" do
     it "assigns all tasks as @tasks" do
       task = Task.create! valid_attributes
@@ -103,14 +109,14 @@ RSpec.describe TasksController, :type => :controller do
   describe "PUT update" do
     describe "with valid params" do
       let(:new_attributes) {
-        skip("Add a hash of attributes valid for your model")
+        {name: 'test 2', description: 'description'}
       }
 
       it "updates the requested task" do
         task = Task.create! valid_attributes
         put :update, {:id => task.to_param, :task => new_attributes}, valid_session
         task.reload
-        skip("Add assertions for updated state")
+        expect(task.name).to eq('test 2')
       end
 
       it "assigns the requested task as @task" do
