@@ -49,7 +49,10 @@ ru:
         one: 'Задача'
         few: 'Задачи'
         other: 'Задачи'
-
+      comment:
+        one: 'Комментарий'
+        few: 'Комментарии'
+        other: 'Комментарии'
     attributes:
       user:
         name: 'ФИО'

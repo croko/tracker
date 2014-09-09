@@ -10,8 +10,10 @@ en:
       show: "Show"
       edit: "Edit"
       close: "Close"
+      add_comment: "Add comment"
     titles:
       edit: "Edit %{model}"
       save: "Save %{model}"
       new: "New %{model}"
       delete: "Delete %{model}"
+      comment: 'Please comment'

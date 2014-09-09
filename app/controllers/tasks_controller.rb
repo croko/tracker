@@ -12,6 +12,7 @@ class TasksController < ApplicationController
   # GET /tasks/1
   # GET /tasks/1.json
   def show
+    @comment = @task.comments.new
   end
 
   # GET /tasks/new

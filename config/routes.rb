@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
-  resources :comments
 
-  resources :tasks
+  resources :tasks do
+    resources :comments, only: [:index, :new, :create]
+  end
 
   devise_for :users
+
   get '/english',  to: 'application#set_to_english'
   get '/russian',  to: 'application#set_to_russian'
 

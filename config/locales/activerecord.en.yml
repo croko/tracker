@@ -6,3 +6,8 @@ en:
         one: 'Task'
         few: 'Tasks'
         other: 'Tasks'
+      comment:
+        one: 'Comment'
+        few: 'Comments'
+        other: 'Comments'
+

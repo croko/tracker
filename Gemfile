@@ -29,6 +29,7 @@ gem 'devise'
 gem 'kaminari'
 gem 'bootstrap-kaminari-views'
 gem 'simple_form', '~> 3.1.0.rc1'
+gem 'react-rails', '~> 1.0.0.pre', github: 'reactjs/react-rails'
 
 group :development do
   gem 'quiet_assets'

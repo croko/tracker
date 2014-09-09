@@ -18,9 +18,15 @@ puts "creating users...\n"
 end
 
 10.times do
-  Task.create(
+  task = Task.create(
           name: Faker::Lorem.words(3).join(' ').titleize,
           description: Faker::Lorem.words(50).join(' '),
           user_id: User.pluck(:id).sample
       )
+  10.times do
+    task.comments.create(
+                     user_id: User.pluck(:id).sample,
+                     body: Faker::Lorem.words(10).join(' ')
+        )
+  end
 end
